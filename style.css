@@ -42,7 +42,6 @@ body {
 a { color: var(--coral); text-decoration-thickness: 2px; text-underline-offset: 3px; }
 
 .wrap { max-width: 760px; margin: 0 auto; padding: 28px 16px 56px; }
-.wrap.wide { max-width: 1040px; }
 
 /* Header */
 .nav {
@@ -100,9 +99,8 @@ a { color: var(--coral); text-decoration-thickness: 2px; text-underline-offset: 
   box-shadow: var(--shadow);
   margin-top: 16px;
 }
-/* 4 across on wide screens, 2x2 on tablets, stacked on phones. */
-.grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-top: 32px; }
-@media (max-width: 880px) { .grid { grid-template-columns: repeat(2, 1fr); } }
+/* 2x2, centered; stacked on phones. */
+.grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; max-width: 680px; margin: 32px auto 0; }
 @media (max-width: 520px) { .grid { grid-template-columns: 1fr; } }
 .grid .card { margin-top: 0; }
 .emoji { font-size: 28px; }
